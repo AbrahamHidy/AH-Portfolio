@@ -1,0 +1,21 @@
+.floating-container {
+    width: 100%;
+    height: 100%;
+
+    .floating-background{
+        position: absolute;
+        background-color: #000;
+        opacity: 8%;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        border-radius: 40px;
+    }
+
+    .floating-inner {
+        margin: 30px;
+        font-size: 40px;
+        width: 100%;
+        height: 100%;
+    }
+}
