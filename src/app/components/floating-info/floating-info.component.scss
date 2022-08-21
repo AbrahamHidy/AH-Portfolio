@@ -1,17 +1,27 @@
+@import "../../../assets/variables.scss";
+
 .floating-container {
     width: 100%;
     height: 100%;
-
+    border-radius: 40px;
+    
     .floating-background{
         position: absolute;
-        background-color: #000;
-        opacity: 8%;
+        background-color: #FFFFFF;
+        opacity: 30%;
         width: 100%;
         height: 100%;
         z-index: -1;
         border-radius: 40px;
     }
 
+    &:hover {
+        .floating-background {
+            background-color: $light-gray;
+            opacity: 40%;
+        }
+    }
+    
     .floating-inner {
         margin: 30px;
         font-size: 40px;

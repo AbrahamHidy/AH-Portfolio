@@ -1,3 +1,5 @@
+@import "assets/variables.scss";
+
 html, body {
     margin: 0;
     padding: 0;
@@ -9,6 +11,27 @@ html, body {
 }
 
 body {
-    background: rgb(213,213,213);
-    background: linear-gradient(90deg, rgba(213,213,213,1) 0%, rgba(255,255,255,1) 35%, rgba(213,213,213,1) 100%);
+    background-color: $off-white;
+
+    /*background: rgb(213,213,213);
+    background: linear-gradient(90deg, rgba(213,213,213,1) 0%, rgba(255,255,255,1) 35%, rgba(213,213,213,1) 100%);*/
+
+    /*background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(213,213,213,1) 35%, rgba(255,255,255,1) 100%);*/
+}
+
+.hover-effect {
+    &.shadow-color:hover {
+        box-shadow: 1px -1px 72px -19px rgba(81,129,255,0.76);
+        -webkit-box-shadow: 1px -1px 72px -19px rgba(81,129,255,0.76);
+        -moz-box-shadow: 1px -1px 72px -19px rgba(81,129,255,0.76);
+    }
+
+    &.enlarge:hover {
+        transform: scale(110%);
+    }
+}
+
+div {
+    transition: all 0.3s;
 }

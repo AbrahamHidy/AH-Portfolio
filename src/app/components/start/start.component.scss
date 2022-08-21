@@ -1,3 +1,5 @@
+@import "../../../assets/variables.scss";
+
 app-floating-info {
     position: fixed;
     bottom: 6%;
@@ -6,4 +8,15 @@ app-floating-info {
 
     width: 75%;
     height: 25%;
+}
+
+.moving-blocks-container {
+    app-moving-block:nth-child(even) {
+        background-color: $light-gray;
+    }
+
+    app-moving-block {
+        height: 100vh;
+        width: 100vw;
+    }
 }
